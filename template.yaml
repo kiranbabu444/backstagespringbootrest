@@ -36,10 +36,10 @@ spec:
       name: Registering the Catalog Info Component
       action: catalog:register
       input:
-        repoContentsUrl: github.com/kiranbabu444
+        repoContentsUrl: https://github.com/kiranbabu444/backstagespringbootrest/blob/main
         catalogInfoPath: /catalog-info.yaml
 
   output:
     links:
       - title: Open the Source Code Repository
-        url: github.com/kiranbabu444/springbootrestgen
+        url: https://github.com/kiranbabu444/backstagespringbootrestgen/
