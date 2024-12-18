@@ -28,7 +28,7 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: springbootrest
-        repoUrl: github.com?owner=kiranbabu444&repo=backstagespringbootrest
+        repoUrl: github.com?owner=kiranbabu444&repo=backstagespringbootrestgen
         defaultBranch: main
         repoVisibility: public
 
