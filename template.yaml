@@ -9,7 +9,7 @@ metadata:
     - java
     - maven
 spec:
-  owner: kiranbabu444
+  owner: guest
   system: microservices
   type: service
 
