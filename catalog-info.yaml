@@ -11,5 +11,5 @@ metadata:
     - maven
 spec:
   type: service
-  owner: guest
+  owner: user:guest
   lifecycle: experimental
