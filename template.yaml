@@ -1,0 +1,45 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: springbootrest
+  title: springbootrest
+  description: springbootrest
+  tags:
+    - spring-boot
+    - java
+    - maven
+spec:
+  owner: kiranbabu444
+  system: microservices
+  type: service
+
+  parameters:
+    - title: Provide information about the new component
+
+  steps:
+    - id: sourceCodeTemplate
+      name: Generating the Source Code Component
+      action: fetch:template
+      input:
+        url: .
+    - id: publish
+      name: Publishing to the Source Code Repository
+      action: publish:github
+      input:
+        allowedHosts: ['github.com']
+        description: springbootrest
+        repoUrl: github.com?owner=kiranbabu444&repo=backstagespringbootrest
+        defaultBranch: main
+        repoVisibility: public
+
+    - id: register
+      name: Registering the Catalog Info Component
+      action: catalog:register
+      input:
+        repoContentsUrl: github.com/kiranbabu444
+        catalogInfoPath: /catalog-info.yaml
+
+  output:
+    links:
+      - title: Open the Source Code Repository
+        url: github.com/kiranbabu444/springbootrestgen
