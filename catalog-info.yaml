@@ -13,15 +13,4 @@ spec:
   type: service
   owner: user:guest
   lifecycle: experimental
----
-apiVersion: backstage.io/v1alpha1
-kind: Template
-metadata:
-  name: springbootrestapptemplate
-  namespace: default
-spec:
-  type: service
-  owner: user:guest
-  path: .
-  definition: ./template.yaml
-
+  
