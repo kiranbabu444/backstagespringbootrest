@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: springbootrestapp
+  title: springbootrestapp
+  annotations:
+    github.com/project-slug: springbootrestapp/springbootrestapp
+  tags:
+    - spring-boot
+    - java
+    - maven
+spec:
+  type: service
+  owner: kiranbabu444
+  lifecycle: experimental
